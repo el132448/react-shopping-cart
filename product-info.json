@@ -4,5 +4,5 @@
     {"id":3, "name":"mango", "price":4, "image":"mango.jpg", "description":"mango ~150g, Orgin: Thailand"},
     {"id":4, "name":"watermelon", "price":20, "image":"watermelon.jpg", "description":"watermelon ~2kg, Orgin: Japan"},
     {"id":5, "name":"blueberry", "price":10, "image":"blueberry.jpg", "description":"blueberry ~100g, Orgin: Australia"},
-    {"id":6, "name":"grape", "price":5, "image":"grape.jpg", "description":"grape ~150g, Orgin: Japan"},
+    {"id":6, "name":"grape", "price":5, "image":"grape.jpg", "description":"grape ~150g, Orgin: Japan"}
 ]
