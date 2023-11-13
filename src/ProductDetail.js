@@ -16,7 +16,7 @@ export default function ProductDetail() {
       })
       setProductDetail(productInfo)
       })
-    },[]) //<== Dependency Array
+    },[params.id]) //<== Dependency Array
 
     return (
     <div>

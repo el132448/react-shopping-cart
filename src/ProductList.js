@@ -1,4 +1,3 @@
-import styles from './ProductList.module.css'
 import React, {useState, useEffect} from "react" //React Hook
 import {Link} from "react-router-dom"
 import Title from "./Title"
