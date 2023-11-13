@@ -8,7 +8,7 @@ export default function ProductDetail() {
   let [productDetail, setProductDetail] = useState(null)
 
   useEffect(()=>{
-    fetch('https://hoyinleung.github.io/demoapi/react-basic-product.json')
+    fetch('https://raw.githubusercontent.com/el132448/react-shopping-cart/master/product-info.json')
     .then(response => response.json())
     .then(data => {
       let productInfo = data.find((element)=>{

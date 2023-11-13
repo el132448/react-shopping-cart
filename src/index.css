@@ -44,7 +44,7 @@ img {
 .addToCart{
   display: block;
   width: 80%;
-  margin: 25px auto;
+  margin: 20px auto;
   font-size: 20px;
   font-weight: bold;
   -webkit-user-select: none;
@@ -54,14 +54,20 @@ img {
   -o-user-select: none;
 }
 .addToCartBtn{
+  display:inline-block;
+  width: 150px;
+  height: 30px;
   padding: 15px 20px;
   border-radius: 6px;
   background-color: #1c3455;
   color: #FFF;
   cursor: pointer;
+  text-align: center;
 }
 
 .subtractBtn{
+  display:inline-block;
+  width: 20px;
   background-color: #1c3455;
   font-weight: bold;
   color: #FFF;
@@ -70,8 +76,11 @@ img {
   margin-right: 7px;
   margin-left: 10px;
   cursor: pointer;
+  text-align: center;
 }
 .addBtn{
+  display:inline-block;
+  width: 20px;
   background-color: #1c3455;
   font-weight: bold;
   color: #FFF;
@@ -90,7 +99,6 @@ img {
   padding: 13px 40px;
   text-align: center;
   width: 300px;
-  text-align: center;
   color: #FFF;
   text-decoration: none;
 }
@@ -142,7 +150,7 @@ img {
   text-align: center;
 }
 .checkoutSection div{
-  margin: 20px 12px;
+  margin: 15px 12px;
 }
 .checkoutSection button{
   font-size: 22px;

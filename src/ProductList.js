@@ -22,7 +22,7 @@ export default function ProductList() {
         //Situation 1: if without 2nd variable: will active the component for every render
         //Situation 2: if Dependency Array is empty array: only active once when the page 1st render
         //Situation 3: if Dependency Array is variable: active when 1st page render + destinated variable change
-        fetch('https://hoyinleung.github.io/demoapi/react-basic-product.json')
+        fetch('https://raw.githubusercontent.com/el132448/react-shopping-cart/master/product-info.json')
         .then(response => response.json())
         .then(data => setProductList(data))
         console.log(productList)
