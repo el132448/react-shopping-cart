@@ -24,7 +24,6 @@ export default function ProductList() {
         fetch('https://raw.githubusercontent.com/el132448/react-shopping-cart/master/product-info.json')
         .then(response => response.json())
         .then(data => setProductList(data))
-        console.log(productList)
     },[])
 
     // //button showing or hiding product list(unwanted)
@@ -41,7 +40,7 @@ export default function ProductList() {
                     <React.Fragment  key={product.id}>
                         <div className="containerItem">
                             <Link to={'/product/'+product.id}>
-                            <img width="200px" src={process.env.PUBLIC_URL+'/img/'+product.image}></img>
+                            <img width="200px" src={process.env.PUBLIC_URL+'/img/'+product.image} alt="product"/>
                             </Link>
                             <div className="productName">
                                 {product.name}  ${product.price}
