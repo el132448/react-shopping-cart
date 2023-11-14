@@ -89,6 +89,7 @@ img {
   margin-left: 7px;
   margin-right: 7px;
   cursor: pointer;
+  text-align: center;
 }
 .backToGoodsListBtn{
   background-color: #1c3455;
