@@ -17,12 +17,11 @@ export default function Checkout() {
   return (
     <>
       <Title mainTitle="Your Cart"/>
-
       {
         cartEmpty &&
         <div className="nothingInCart">
-          Nothing in cart<br/>
-          <Link to="/">Go to product list</Link>
+          Nothing in cart<br/><br/>
+            <Link className="backToGoodsListBtn" to="/">Back to Homepage</Link>
         </div>
       }
 
