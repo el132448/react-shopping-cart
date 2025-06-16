@@ -71,10 +71,30 @@ export default function Checkout() {
               <br/>
               ${freeShippingPrice-grandTotal} remains</div>
             }
-            <button>Place your order</button>
+            <button onClick={handleCheckout}>Place your order</button>
           </div>
         </div>
       }
     </>
   )
+
+  function handleCheckout() {
+    fetch("http://localhost:5000/api/checkout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(cartItems)
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log("Checkout success:", data);
+      alert("Order placed successfully!");
+      // 這裡可以加清除購物車等後續處理
+    })
+    .catch((err) => {
+      console.error("Checkout error:", err);
+      alert("Something went wrong. Please try again.");
+    });
+  }
 }
